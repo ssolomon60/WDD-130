@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="styles/rafting.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Add base styles */
+        /* Base styles */
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f0f4f8;
             color: #333;
+            text-align: center; /* Centering all text */
         }
 
         .container {
@@ -25,18 +26,22 @@
 
         header {
             display: flex;
-            justify-content: space-between;
+            justify-content: center; /* Center the logo and navigation */
             align-items: center;
-            background-color: #333;
+            background-color: #DC3E18; /* Changed header background to DC3E18 */
             padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added subtle shadow for separation */
         }
 
         header img {
-            width: 150px;
+            width: auto;
+            max-width: 150px; /* Prevent compression of the logo */
+            height: auto;
+            background-color: transparent; /* Removed background from logo */
         }
 
         nav a {
-            color: white;
+            color: #F4F1B9; /* Changed font color to F4F1B9 */
             text-decoration: none;
             margin: 0 15px;
             font-weight: 700;
@@ -58,13 +63,10 @@
         }
 
         .hero h1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             font-size: 3em;
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            background-color: transparent; /* Removed background color */
         }
 
         article, section {
@@ -78,10 +80,17 @@
             margin-bottom: 20px;
         }
 
-        .client-image {
-            width: 100%;
-            max-width: 600px;
+        .client-image-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin: 20px 0;
+        }
+
+        .client-image {
+            width: 300px; /* Match the width of the gallery images */
+            height: 200px; /* Match the height of the gallery images */
+            object-fit: cover; /* Maintain aspect ratio while filling the box */
             border-radius: 8px;
         }
 
@@ -99,7 +108,6 @@
             background-color: #333;
             color: white;
             padding: 20px 0;
-            text-align: center;
         }
 
         footer p {
@@ -108,6 +116,21 @@
 
         footer .social-media {
             margin-top: 10px;
+        }
+
+        /* Gallery Image Styling */
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
         }
 
         /* Media Queries for responsiveness */
@@ -123,6 +146,11 @@
 
             nav a {
                 margin: 5px 10px;
+            }
+
+            .gallery img {
+                max-width: 100%;
+                height: auto;
             }
         }
     </style>
@@ -145,7 +173,13 @@
                 <h1>White Water Rafting Co.</h1>
             </div>
             <article>
-                <img src="images/client.jpg" alt="Smiling client enjoying a rafting trip" class="client-image">
+                <div class="client-image-wrapper">
+                    <img src="images/client.jfif" alt="Smiling client enjoying a rafting trip" class="client-image">
+                    <img src="images/client1.jfif" alt="Smiling client enjoying a rafting trip" class="client-image">
+                    <img src="images/client2.jfif" alt="Smiling client enjoying a rafting trip" class="client-image">
+
+
+                </div>
                 <p>Our mission is to provide thrilling and safe rafting adventures for everyone. Join us to experience the rush of white water rafting!</p>
             </article>
             <section>
@@ -165,16 +199,16 @@
         </main>
 
         <footer>
-            <p>&copy; 2024 White Water Rafting Co. | Designed by Your Name</p>
+            <p>&copy; 2024 White Water Rafting Co. | Designed by Sydney Solomon</p>
             <div class="social-media">
                 <a href="https://facebook.com" target="_blank">
-                    <img src="images/facebook-icon.png" alt="Facebook">
+                    <img src="images/facebook_icon.png" alt="Facebook">
                 </a>
                 <a href="https://twitter.com" target="_blank">
-                    <img src="images/twitter-icon.png" alt="Twitter">
+                    <img src="images/twitter_icon.png" alt="Twitter">
                 </a>
                 <a href="https://instagram.com" target="_blank">
-                    <img src="images/instagram-icon.png" alt="Instagram">
+                    <img src="images/instagram_icon.png" alt="Instagram">
                 </a>
             </div>
         </footer>
