@@ -1,0 +1,90 @@
+:root {
+    --primary-color: #;
+    --secondary-color: #ffffff;
+    --accent-color: #ff9900;
+    --font-header: 'Poppins', sans-serif;
+    --font-body: 'Bodoni Moda', serif;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: var(--font-header);
+    color: var(--accent-color);
+}
+
+p {
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+header img {
+    height: 50px;
+}
+
+nav a {
+    margin: 0 10px;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+}
+
+.client-image {
+    float: right;
+    max-width: 100px;
+    margin-left: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+footer a img {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    height: 30px;
+}
