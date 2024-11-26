@@ -1,41 +1,72 @@
-nav {
-    background-color: powderblue;
-    padding: 10px;
-    border: 1px solid rgb(0, 0, 0);
-    box-shadow: 0 0 30px gray;
-}
-nav a {
-    color: rgb(58, 55, 55);
-    display: block;
-    padding: 10px;
-}
-h1 {
-    color: black;
-}
-img {
-    width: 150px;
-    height: auto;
-    border: 1px solid rgb(101, 101, 101);
-    box-shadow: 0 0 30px gray;
-}
-p {
+/* General styles */
+body {
+    background-color: antiquewhite;
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 0;
-    
 }
-main {
-    max-width: 840px;
-}
-main img{
-    width: 150px;
-    height: auto;
-}
-footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-}
-aside img {
-    width: 200px;
-    height: auto;
 
+header {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.section-header {
+    font-size: 2rem;
+    color: #333;
+}
+
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-top: 2px solid #ccc;
+}
+
+aside {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+ul {
+    padding: 10px;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+.github-link {
+    color: black;
+    text-decoration: underline;
 }
