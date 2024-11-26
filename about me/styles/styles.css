@@ -1,0 +1,140 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    text-align: center;
+}
+
+/* Header Styles */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header .logo {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 40px;
+    background-color: #fff;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.intro h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-image {
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-box {
+    max-width: 400px;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.experience h2, .voluntary-experience h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.experience-list, .voluntary-experience ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.experience-list li, .voluntary-experience li {
+    margin: 10px 0;
+    text-align: left;
+}
+.experience h2, .skils_and_certification h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.experience-list, .skils_and_certification ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.experience-list li, .skils_and_certification li {
+    margin: 10px 0;
+    text-align: left;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image {
+        width: 300px;
+    }
+
+    .text-box {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .nav {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .nav a {
+        display: inline-block;
+        margin: 10px 0;
+    }
+}

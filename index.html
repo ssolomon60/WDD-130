@@ -6,65 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sydney Solomon's portfolio page for WDD 130, including personal interests and projects.">
     <meta name="author" content="Sydney Solomon">
-    <title>Sydney Solomon | WDD 130</title>
+    <title>Sydney Solomon | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
-
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a style="display: inline; " href="index.html">Home</a>
-            <a style="display: inline" href="wwr/about.html">About Me</a>
-            <a style="display: inline" href="fun things">Connect 4</a>
-            <a style="display: inline" href="#">Programming Portfolio</a>
+    <header class="header">
+        <div class="logo">Sydney Solomon</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="wwr/about.html">About Page for Rafting Bros</a>
+            <a href="fun things">Connect 4</a>
+            <a href="https://github.com/ssolomon60">Programming Portfolio</a>
+            <a href="about me/about_me.html">About me</a>
+
+
         </nav>
     </header>
-    <main>
-        <h1>Sydney Solomon | WDD 130</h1>
-        <h2 style="font-size: 45px;">About Me</h2>
-        <p></p>
-        <img src="images/profile_1.jpg" alt="Photo of Sydney Solomon's baby" width="250">
-        <p></p>
-        <p>
-            Hello! My name is Sydney Solomon and I am from Hawaii. I am of Polynesian descent. I enjoy sports and computers/technologies.
-            I went on a mission to Guatemala City East Mission. I used to play Center for a Junior College in Norwalk, CA at Cerritos College
-            and got recruited to play football at a Division 1 FBS at Troy University in Troy, Alabama. My interest are litsed below.
-        </p>
-        <ul style="padding: 10px;">
-            <h style="font-size: larger;">Interest List:</h>
-            <li>Sports</li>
-            <li>Cooking</li>
-            <li>Video Games</li>
-            <li><a style="color:black" href="#">Programming</a> [hint: heres a link to my projects on github]</li>
-        </ul>
-        <h></h>
-        <header2 style="font-size: 45px;">My Family</header2>
-        <p></p>
-        <img src="images/profile.jpg" alt="Photo of Sydney Solomon's baby" width="200">
-        <p></p>
-        <p2 style="font-size: 18px;">
-        Here is a picture of my baby. He was born November 10th of this year. He is a mix of Mexican-Hawaiian. His name is Jacob. When he's fed, he is a very chill guy.
-        </p2>
-        <p></p>
-        <img src="images/waifu.jpg" alt="Photo of Sydney Solomon's baby" width="200">
-        <p></p>
-        <p3 style="font-size: 18px;">
-        Here is a picture of my better half Emily. We dated for two years before we got married. We were married in the Ogden, Utah temple and it was probably one of the two best things that has happened to me in my life. 
-        </p3>
 
-
+    <main class="main-content">
+        <section class="intro">
+            <h1>Welcome to My Website</h1>
+            <h2>Sydney Solomon | WDD 130</h2>           
+            <img class="profile-image" src="images/profile_1.jpg" alt="Profile Picture">
+            <div class="text-box">
+                <p>Hello! My name is Sydney Solomon, and I am from Hawaii. I am of Polynesian descent and enjoy sports, computers, and technology. Here is where I will post and display my projects and experiences! </p>
+                <ul class="interest-list">
+                    <li>Sports</li>
+                    <li>Cooking</li>
+                    <li>Video Games</li>
+                    <li><a href="#" target="_blank">Programming (GitHub Projects)</a></li>
+                </ul>
+            </div>
+        </section>
     </main>
 
-    <aside>
+    <aside class="aside">
         <h2>Hawaii, USA</h2>
-        <img src="https://churchofjesuschristtemples.org/assets/img/temples/laie-hawaii-temple/laie-hawaii-temple-7370-main.jpg" 
-             alt="Laie, Hawaii Temple" width="200px">
-        <p>Laie, Hawaii is where I am from. I lived in a beach town, and going to the beach and spending time with family were always the best times of my life. It is warm year-round, rarely dropping below 65 degrees. It is very humid, and when hot, you can't really tell what is sweat or just the humid air. It is home to BYU-Hawaii and the great Polynesian Cultural Center.</p>
+        <img src="https://churchofjesuschristtemples.org/assets/img/temples/laie-hawaii-temple/laie-hawaii-temple-7370-main.jpg" alt="Laie, Hawaii Temple">
+        <p>Laie, Hawaii, is my hometown. It's warm year-round and home to the Polynesian Cultural Center and BYU-Hawaii.</p>
     </aside>
 
-    <footer>© 2024 Sydney Solomon | Hawaii, USA</footer>
+    <footer class="footer">
+        <p>© 2024 Sydney Solomon | Hawaii, USA</p>
+    </footer>
 </body>
 
 </html>
-
