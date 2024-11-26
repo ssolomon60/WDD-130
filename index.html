@@ -1,56 +1,132 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Describe your home page here using keywords like your name, the course, the purpose of the page.">
+    <meta name="description" content="Sydney Solomon's portfolio page for WDD 130, including personal interests and projects.">
     <meta name="author" content="Sydney Solomon">
     <title>Sydney Solomon | WDD 130</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        /* Inline styles moved to CSS for better organization */
+        body {
+            background-color: antiquewhite;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
+        header {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        img {
+            border-radius: 10px;
+        }
+
+        .section-header {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        footer {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            border-top: 2px solid #ccc;
+        }
+
+        aside {
+            background-color: #e0e0e0;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        ul {
+            padding: 10px;
+        }
+
+        ul li {
+            margin: 5px 0;
+        }
+    </style>
 </head>
-<body style="background-color: antiquewhite;">
+
+<body>
     <header>
         <nav>
-            <a style="display: inline; " href="index.html">Home</a>
-            <a style="display: inline" href="wrr/about.html">About Me</a>
-            <a style="display: inline" href="#">Fun Things</a>
-            <a style="display: inline" href="#">Programming Portfolio</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wwr/">About Me</a></li>
+                <li><a href="#">Fun Things</a></li>
+                <li><a href="#">Programming Portfolio</a></li>
+            </ul>
         </nav>
-    </header>   
+    </header>
     <main>
-        <h1>Sydney Solomon | WDD 130</h1>
-        <h2 style="font-size: 45px;">About Me</h2>
-        <p></p>
-        <img src="images/profile_1.jpg" alt="Photo of Sydney Solomon's baby" width="250">
-        <p></p>
-        <p>
-            Hello! My name is Sydney Solomon and I am from Hawaii. I am of Polynesian descent. I enjoy sports and computers/technologies.
-            I went on a mission to Guatemala City East Mission. I used to play Center for a Junior College in Norwalk, CA at Cerritos College
-            and got recruited to play football at a Division 1 FBS at Troy University in Troy, Alabama. My interest are litsed below.
-        </p>
-        <ul style="padding: 10px;">
-            <h style="font-size: larger;">Interest List:</h>
-            <li>Sports</li>
-            <li>Cooking</li>
-            <li>Video Games</li>
-            <li><a style="color:black" href="#">Programming</a> [hint: heres a link to my projects on github]</li>
-        </ul>
-        <h></h>
-        <header2 style="font-size: 45px;">My Family</header2>
-        <p></p>
-        <img src="images/profile.jpg" alt="Photo of Sydney Solomon's baby" width="200">
-        <p></p>
-        <p2 style="font-size: 18px;">
-        Here is a picture of my baby. He was born November 10th of this year. He is a mix of Mexican-Hawaiian. His name is Jacob. When he's fed, he is a very chill guy.
-        </p2>
-    </main>
-<aside>
-    <h2>Hawaii, USA</h2>
-    <img src="https://churchofjesuschristtemples.org/assets/img/temples/laie-hawaii-temple/laie-hawaii-temple-7370-main.jpg" alt="Laie, Hawaii Temple" width="200px">
-    <p>Laie, Hawaii is where I am from. I lived in a beach town and going to the beach and spending time with family where always the best times spent in my life. It is warm year round, really never dropping below 65 degrees. It is very humid and when hot, you can't really tell what is sweat or just the humid air. It is home the other BYU school, BYU-Hawaii and the great Polynesian Cultrual Center.</p>
-</aside>
-<footer>© Sydney Solomon | Hawaii, USA</footer>
-</body>
-</html>
+        <h1 class="section-header">Sydney Solomon | WDD 130</h1>
 
+        <section>
+            <h2 class="section-header">About Me</h2>
+            <img src="images/profile_1.jpg" alt="Sydney Solomon smiling with a serene background" width="250">
+            <p>Hello! My name is Sydney Solomon, and I am from Hawaii. I am of Polynesian descent. I enjoy sports and computers/technologies.
+                I went on a mission to Guatemala City East Mission. I used to play Center for a Junior College in Norwalk, CA at Cerritos College
+                and got recruited to play football at a Division 1 FBS at Troy University in Troy, Alabama. My interests are listed below.
+            </p>
+            <ul>
+                <h3>Interest List:</h3>
+                <li>Sports</li>
+                <li>Cooking</li>
+                <li>Video Games</li>
+                <li><a href="https://github.com" target="_blank" style="color:black;">Programming</a> (Link to my projects on GitHub)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-header">My Family</h2>
+            <img src="images/profile.jpg" alt="Sydney Solomon's baby Jacob smiling" width="200">
+            <p>
+                Here is a picture of my baby. He was born on November 10th of this year. He is a mix of Mexican-Hawaiian. His name is Jacob.
+                When he's fed, he is a very chill guy.
+            </p>
+        </section>
+    </main>
+
+    <aside>
+        <h2>Hawaii, USA</h2>
+        <img src="https://churchofjesuschristtemples.org/assets/img/temples/laie-hawaii-temple/laie-hawaii-temple-7370-main.jpg" 
+             alt="Laie, Hawaii Temple" width="200px">
+        <p>Laie, Hawaii is where I am from. I lived in a beach town, and going to the beach and spending time with family were always the best times of my life. It is warm year-round, rarely dropping below 65 degrees. It is very humid, and when hot, you can't really tell what is sweat or just the humid air. It is home to BYU-Hawaii and the great Polynesian Cultural Center.</p>
+    </aside>
+
+    <footer>© 2024 Sydney Solomon | Hawaii, USA</footer>
+</body>
+
+</html>
