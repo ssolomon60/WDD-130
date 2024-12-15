@@ -4,101 +4,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sydney Solomon's Contact Us page.">
+    <meta name="description" content="Sydney Solomon's About Us page.">
     <meta name="author" content="Sydney Solomon">
-    <title>Contact Us - The Rafting Bros</title>
+    <title>About Us - The Rafting Bros</title>
     <link rel="stylesheet" href="styles/contactus.css">
-    
 </head>
 
-<body style="background-color: #F4F1B9;">
+<body>
     <div class="container">
-        <header class="flex">
-            <img src="images/logo.png" alt="Company logo for White Water Rafting Co." class="logo" style="width: 60px; height: auto; display: block; margin: 0 auto;">
+        <header>
+            <img src="images/logo.png" alt="Company logo for White Water Rafting Co." class="logo">
             <h1>The Rafting Bros</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="#">Trips</a></li>
+                    <li><a href="trips.html">Trips</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
         </header>
+
         <main>
-            <div>
+            <div class="company-info">
                 <h1>Company Information</h1>
-                <p>Address - 123456 Faker Way, Colorodo Springs, Colorado</p>
-                <p>Office Phone Number - (868) 345-4545</p>
-                <p>Customer Servivce Line - (866) 123-4567</p>
-                <p>Email - TheRaftingBrosCO@rafters.com</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8639.285516077782!2d-106.90434120121843!3d39.86981726258522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1733945990516!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+                <p><strong>Address:</strong> 123456 Faker Way, Colorado Springs, Colorado</p>
+                <p><strong>Office Phone Number:</strong> (868) 345-4545</p>
+                <p><strong>Customer Service Line:</strong> (866) 123-4567</p>
+                <p><strong>Email:</strong> TheRaftingBrosCO@rafters.com</p>
+        
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8639.285516077782!2d-106.90434120121843!3d39.86981726258522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1733945990516!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
             </div>
-            <p></p>
+        
             <hr>
-            <p></p>
-            <h2>Contact Form</h2>
-            <div class="form">
-                <form>
+        
+            <section class="contact-form">
+                <h2>Contact Form</h2>
+                <form action="#" method="post">
                     <fieldset>
                         <legend>Contact Information</legend>
                         <label for="fullname">Full Name:</label>
-                        <input type="text" id="fullname" name="fullname">
+                        <input type="text" id="fullname" name="fullname" placeholder="Your full name" required>
+        
                         <label for="useremail">Email:</label>
-                        <input type="email" id="useremail" name="useremail">
+                        <input type="email" id="useremail" name="useremail" placeholder="Your email address" required>
                     </fieldset>
+        
                     <fieldset>
-                        <legend>What type of questions do you have</legend>
+                        <legend>What type of questions do you have?</legend>
                         <label for="geninq">General Inquiry</label>
-                        <input type="radio" id="geninq" name="geninq">
+                        <input type="radio" id="geninq" name="question_type">
+                        
                         <label for="Ress">Reservation Questions</label>
-                        <input type="radio" id="Ress" name="Ress">
+                        <input type="radio" id="Ress" name="question_type">
+        
                         <label for="ws">Website Suggestions</label>
-                        <input type="radio" id="ws" name="ws">
-                        <label for="sub">Subscribing me to the Monthly Newsletter</label>
+                        <input type="radio" id="ws" name="question_type">
+        
+                        <label for="sub">Subscribe to Monthly Newsletter</label>
                         <input type="checkbox" id="sub" name="sub">
                     </fieldset>
+        
                     <fieldset>
-                        <legend>Your Message to us</legend>
-                        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                        <legend>Your Message</legend>
+                        <textarea id="message" name="message" rows="4" placeholder="Write your message here" required></textarea>
                     </fieldset>
+        
                     <fieldset>
-                        <input type="submit" value="Full Send!" >
+                        <input type="submit" value="Send Message">
                     </fieldset>
                 </form>
-            </div>
-            <div>
-                <h1>Come meet our crew!</h1>
-                <hr>
-                <h2>Michael Jakeson</h2>
-                <img src="images/michael.jpg" width="600" height="400" alt="Mike showing how to Kayak alone in the white water">
-                <h3>Hobbies</h3>
-                <p>- Swimming</p>
-                <p>- Computers</p>
-                <p>- Video Games</p>
-                <h3>Quote from Mike</h3>
-                <strong>"Working at The Rafting Bros is a dream come true! I get to share my love for white water rafting with guests from all walks of life while being surrounded by an awesome team and stunning rivers. Every day feels like an adventure!"</strong> 
-                <hr>
-                <h2>Sarah Volkski</h2>
-                <img src="images/Sarah.jpg"  width="600" height="420" alt="Sarah guiding the boat back by herself">
-                <h3>Hobbies</h3>
-                <p>- Surfing</p>
-                <p>- Hiking</p>
-                <p>- Rock Climbing</p>
-                <h3>Quote from Sarah</h3>
-                <strong>"I couldn’t ask for a better job than being part of The Rafting Bros family. Whether it's guiding guests through rapids or helping them build confidence on the water, I love seeing their smiles and knowing we made their experience unforgettable."</strong>
-                <hr>
-                <h2>Larry Fritz</h2>
-                <img src="images/Larry.jpg" width="600" height="420" alt="Larry giving a thumbs up for a successful trip across the canyons" >
-                <h3>Hobbies</h3>
-                <p>- Sleeping</p>
-                <p>- Motorcycles</p>
-                <p>- Kayaking</p>
-                <h3>Quote from Larry</h3>
-                <strong>"At The Rafting Bros, work never feels like work! I get to spend my days outdoors, ride the rapids, and bond with a crew that’s as passionate about rafting as I am. This is more than just a job; it’s an incredible journey every single day."</strong>
-
-            </div>
+            </section>
+        
+            <hr>
+        
+            <section class="meet-our-crew">
+                <h2>Meet Our Crew!</h2>
+        
+                <div class="crew-member">
+                    <h3>Michael Jakeson</h3>
+                    <img src="images/michael.jpg" alt="Mike showing how to Kayak alone in the white water">
+                    <h4>Hobbies:</h4>
+                    <ul>
+                        <li>Swimming</li>
+                        <li>Computers</li>
+                        <li>Video Games</li>
+                    </ul>
+                    <blockquote>
+                        "Working at The Rafting Bros is a dream come true! I get to share my love for white water rafting with guests from all walks of life while being surrounded by an awesome team and stunning rivers. Every day feels like an adventure!"
+                    </blockquote>
+                </div>
+        
+                <div class="crew-member">
+                    <h3>Sarah Volkski</h3>
+                    <img src="images/Sarah.jpg" alt="Sarah guiding the boat back by herself" style="width: 600px; height: auto;">
+                    <h4>Hobbies:</h4>
+                    <ul>
+                        <li>Surfing</li>
+                        <li>Hiking</li>
+                        <li>Rock Climbing</li>
+                    </ul>
+                    <blockquote>
+                        "I couldn’t ask for a better job than being part of The Rafting Bros family. Whether it's guiding guests through rapids or helping them build confidence on the water, I love seeing their smiles and knowing we made their experience unforgettable."
+                    </blockquote>
+                </div>
+        
+                <div class="crew-member">
+                    <h3>Larry Fritz</h3>
+                    <img src="images/Larry.jpg" alt="Larry giving a thumbs up for a successful trip across the canyons">
+                    <h4>Hobbies:</h4>
+                    <ul>
+                        <li>Sleeping</li>
+                        <li>Motorcycles</li>
+                        <li>Kayaking</li>
+                    </ul>
+                    <blockquote>
+                        "At The Rafting Bros, work never feels like work! I get to spend my days outdoors, ride the rapids, and bond with a crew that’s as passionate about rafting as I am. This is more than just a job; it’s an incredible journey every single day."
+                    </blockquote>
+                </div>
+            </section>
         </main>
+        
         <footer>
             <p>&copy; 2024 The Rafting Bros Co. | Designed by Sydney Solomon</p>
             <div class="social-media">
