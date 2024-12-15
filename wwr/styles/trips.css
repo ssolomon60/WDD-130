@@ -58,7 +58,7 @@ body {
 }
 
 h1, h2 {
-    color: #005A2D;
+    color: #ffffff;
 }
 
 h3, p {
@@ -71,7 +71,7 @@ a {
 }
 
 .cta-button {
-    background-color: #005A2D;
+    background-color: #0066cc;
     color: white;
     padding: 15px 30px;
     font-size: 1.1em;
@@ -85,14 +85,14 @@ a {
 }
 
 .hero {
-    background: url('images/hero-background.jpg') no-repeat center center;
     background-size: cover;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 60px 20px;
 }
 
 .hero h1 {
+    color:rgb(0, 0, 0);
     font-size: 2.5em;
     margin: 0;
 }
@@ -122,7 +122,7 @@ a {
 
 .trip h2 {
     font-size: 1.5em;
-    color: #005A2D;
+    color: #0066cc;
 }
 
 .trip p {
@@ -159,7 +159,7 @@ table th, table td {
 }
 
 table th {
-    background-color: #005A2D;
+    background-color: #0066cc;
     color: white;
 }
 
